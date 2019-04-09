@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dlayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#F2695C"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/menu"
+                        android:id="@+id/open"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="80sp"
+                        android:textColor="#FDFBFB"
+                        android:text="Q\u0026C"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="20px"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="챌린저 "
+                            android:textSize="15sp"
+                            android:textColor="#FDFBFB"
+
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="000"
+                                android:textSize="18sp"
+                                android:id="@+id/id2"
+                                android:textColor="#F8CA4D"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="님 "
+                                android:textColor="#FDFBFB"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="반갑습니다 "
+                            android:textColor="#FDFBFB"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ECDDC7">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <Button
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Main Quest"
+                        android:id="@+id/mbtn"
+                        android:textSize="30sp"
+                        android:background="@drawable/border_radius"
+                        android:gravity="center"
+                        android:textColor="#FDFBFB"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <Button
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Together Quest"
+                        android:id="@+id/tbtn"
+                        android:textSize="30sp"
+                        android:background="@drawable/border_radius2"
+                        android:gravity="center"
+                        android:textColor="#FDFBFB"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <Button
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Challenge registration"
+                        android:id="@+id/cbtn"
+                        android:textSize="30sp"
+                        android:textColor="#FDFBFB"
+                        android:background="@drawable/border_radius3"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#F2695C">
+
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="90dp"
+                        android:text="Q\u0026C를 통해 지금 도전하세요\u0021 \u0021 "
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:padding="20dp"
+                        android:background="@drawable/border"/>
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:text="프로필 관리"
+                        android:padding="20dp"
+                        android:background="@drawable/border"/>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:text="공지 사항"
+                        android:padding="20dp"
+                        android:background="@drawable/border"/>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:text="자주 묻는 질문"
+                        android:padding="20dp"
+                        android:background="@drawable/border"/>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:text="1:1 문의/챌린지 주제제안"
+                        android:padding="20dp"
+                        android:background="@drawable/border"/>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:text="법적 고지"
+                        android:padding="20dp"
+                        android:background="@drawable/border"/>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:text="회사 정보"
+                        android:padding="20dp"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/kakao"
+                        android:background="@drawable/kaka"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="5dp"
+
+                        />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/face"
+                        android:background="@drawable/face"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="5dp"
+                        />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/instar"
+                        android:background="@drawable/instar"
+
+                        />
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:text="CLOSE"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/close"
+                        android:background="@drawable/borderbox1"
+                        android:layout_margin="3dp"
+                        />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:text="Logout"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/logout"
+                        android:background="@drawable/borderbox1"
+                        android:layout_margin="3dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
