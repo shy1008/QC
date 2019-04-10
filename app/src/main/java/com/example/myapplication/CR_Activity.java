@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import android.R;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -43,7 +42,7 @@ public class CR_Activity extends AppCompatActivity  {
             hideKeyboard();
             switch (v.getId())
             {
-                case R.id.ll2 :
+                case R.id.ll3:
                     break;
             }
         }
@@ -102,14 +101,14 @@ public class CR_Activity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.id.activit_cr_);
+        setContentView(R.layout.activity_cr_);
 
 
         left = (Button) findViewById(R.id.left);
         chname = (EditText) findViewById(R.id.chname);
         chtext = (EditText) findViewById(R.id.chtext);
         imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        ll2= findViewById(R.id.ll2);
+        ll2= findViewById(R.id.ll3);
         ll2.setOnClickListener(lplp);
 
         findViewById(R.id.res).setOnClickListener(p);
