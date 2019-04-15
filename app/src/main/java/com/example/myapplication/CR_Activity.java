@@ -57,37 +57,42 @@ public class CR_Activity extends AppCompatActivity  {
 
 
 
-    View.OnClickListener p = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
+    View.OnClickListener p;
 
-            id = mStroe.collection("board").document().getId();
+    {
+        p = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                id = mStroe.collection("board").document().getId();
 
 
-            Map<String, Object> post = new HashMap<>();
-            post.put("id",id);
-            post.put("title",chname.getText().toString());
+                Map<String, Object> post = new HashMap<>();
+                post.put("id", id);
+                post.put("title", chname.getText().toString());
 //            post.put("timestamp", D);
-            post.put("content",null);
-            post.put("name",chtext.getText().toString());
-
-            mStroe.collection("board").document(id).set(post)
-                    .addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            Toast.makeText(CR_Activity.this,"업로드성공",Toast.LENGTH_SHORT).show();
-                            finish();
-                        }
-                    }).addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(CR_Activity.this,"업로드 실패",Toast.LENGTH_SHORT).show();
-                }
-            });
+                post.put("content", null);
+                post.put("name", chtext.getText().toString());
 
 
-        }
-    };
+                mStroe.collection("board").document(id).set(post)
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Toast.makeText(CR_Activity.this, "업로드성공", Toast.LENGTH_SHORT).show();
+                                finish();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(CR_Activity.this, "업로드 실패", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+
+            }
+        };
+    }
 
     View.OnClickListener lt = new View.OnClickListener() {
         @Override

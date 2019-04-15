@@ -187,6 +187,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:id="@+id/QC"
                     >
 
                     <TextView

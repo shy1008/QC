@@ -11,6 +11,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Button tbtn;
     Button cbtn;
     DrawerLayout dlayout;
+    LinearLayout QC;
 
     ImageView kaka;
     ImageView face;
@@ -58,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener mb = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-//            Intent main = new Intent(MainActivity.this,MQ_Activity.class);
-//            startActivityForResult(main,10);
-            Toast.makeText(getApplicationContext(),"준비중입니다",Toast.LENGTH_LONG).show();
+            Intent main = new Intent(MainActivity.this,MQ_Activity.class);
+            startActivity(main);
+//            Toast.makeText(getApplicationContext(),"준비중입니다",Toast.LENGTH_LONG).show();
         }
     };
     View.OnClickListener tb = new View.OnClickListener() {
@@ -102,6 +104,15 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    View.OnClickListener qc = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent qcc = new Intent(Intent.ACTION_VIEW,Uri.parse("https://github.com/shy1008/QC"));
+            startActivity(qcc);
+        }
+    };
+
+
 
 
     @Override
@@ -113,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
         id2 = (TextView) findViewById(R.id.id2);
         id2.setText(str1);
 
+        QC = (LinearLayout)findViewById(R.id.QC);
         dlayout = (DrawerLayout)findViewById(R.id.dlayout);
         open = (Button)findViewById(R.id.open);
         close = (Button)findViewById(R.id.close);
@@ -135,6 +147,8 @@ public class MainActivity extends AppCompatActivity {
         kaka.setOnClickListener(v);
         face.setOnClickListener(vv);
         instar.setOnClickListener(vvv);
+
+        QC.setOnClickListener(qc);
 
 
 

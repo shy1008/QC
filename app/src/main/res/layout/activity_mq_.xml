@@ -59,55 +59,60 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gold"
+                android:id="@+id/imageView"
+                android:layout_marginTop="20dp"
+            />
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" 챌린지명"
-                android:textSize="25dp"
-                android:layout_marginTop="20dp"
-                android:layout_margin="20dp"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="챌린지명"
-                android:layout_margin="20dp"
-                android:padding="10dp"
-                android:id="@+id/txt1"
-                />
+                android:textSize="25sp"
+                android:id="@+id/fact"
+                android:text="왕관을 쓰려는자, 그 무게를 버텨라"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"/>
+
+
+
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" 챌린지 내용"
-                android:textSize="25dp"
-                android:layout_marginTop="20dp"
-                android:layout_margin="20dp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="20dp"
-                android:padding="10dp"
-                android:hint="내용"
-                android:gravity="top"
-                android:id="@+id/txt2"/>
-        </LinearLayout>
-
-        <TextView
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="남은시간:"
+            android:id="@+id/fact_button"
             android:textSize="25dp"
-            android:layout_gravity="center"/>
+            android:layout_marginBottom="70dp"
+            android:text="도전!"
+            android:layout_gravity="center"
+            android:background="@drawable/borderbox1"
+            />
+        </LinearLayout>
+
+
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="남은시간:"-->
+            <!--android:textSize="25dp"-->
+            <!--android:layout_gravity="center"/>-->
+
+
 
     </LinearLayout>
 

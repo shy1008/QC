@@ -65,6 +65,7 @@ public class TQ3_Activity extends AppCompatActivity implements View.OnClickListe
                     String contents = (String) dc.getDocument().getData().get("contents");
                     String name = (String) dc.getDocument().getData().get("name");
 
+
                     Board data = new Board(id,title, contents,name);
 
                     mBoardList.add(data);
