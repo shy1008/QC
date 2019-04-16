@@ -47,10 +47,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:textSize="80sp"
+                        android:textSize="70sp"
                         android:textColor="#FDFBFB"
                         android:text="Q\u0026C"
                         android:gravity="center"
+                        android:fontFamily="@font/cabin_regular"
+
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -68,8 +70,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="챌린저 "
-                            android:textSize="15sp"
+                            android:text="챌린지 "
+                            android:fontFamily="@font/nanumpenscript_regular"
+                            android:textSize="20sp"
                             android:textColor="#FDFBFB"
 
                             />
@@ -81,23 +84,25 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="000"
-                                android:textSize="18sp"
+                                android:fontFamily="@font/nanumpenscript_regular"
+                                android:textSize="24sp"
                                 android:id="@+id/id2"
                                 android:textColor="#F8CA4D"
                                 />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="님 "
-                                android:textColor="#FDFBFB"
-                                android:textSize="15sp"/>
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="님 "-->
+                                <!--android:textColor="#FDFBFB"-->
+                                <!--android:textSize="15sp"/>-->
                         </LinearLayout>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="반갑습니다 "
+                            android:text="환영합니다 "
+                            android:fontFamily="@font/nanumpenscript_regular"
                             android:textColor="#FDFBFB"
-                            android:textSize="15sp"
+                            android:textSize="20sp"
                             />
 
                     </LinearLayout>
@@ -122,6 +127,7 @@
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:text="Main Quest"
+                        android:fontFamily="@font/cabin_regular"
                         android:id="@+id/mbtn"
                         android:textSize="30sp"
                         android:background="@drawable/border_radius"
@@ -140,6 +146,7 @@
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:text="Together Quest"
+                        android:fontFamily="@font/cabin_regular"
                         android:id="@+id/tbtn"
                         android:textSize="30sp"
                         android:background="@drawable/border_radius2"
@@ -158,6 +165,7 @@
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:text="Challenge registration"
+                        android:fontFamily="@font/cabin_regular"
                         android:id="@+id/cbtn"
                         android:textSize="30sp"
                         android:textColor="#FDFBFB"
@@ -193,49 +201,77 @@
                     <TextView
                         android:layout_width="300dp"
                         android:layout_height="90dp"
-                        android:text="Q\u0026C를 통해 지금 도전하세요\u0021 \u0021 "
-                        android:textSize="20dp"
+                        android:text="Q\u0026C를 통해 지금 도전하세요\u0021 \u0021
+"
+                        android:textSize="31dp"
+                        android:fontFamily="@font/nanumpenscript_regular"
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"
                         android:padding="20dp"
-                        android:background="@drawable/border"/>
+                        android:background="@drawable/border"
+                       />
+                    <!--<TextView-->
+                        <!--android:layout_width="300dp"-->
+                        <!--android:layout_height="90dp"-->
+                        <!--android:text="-->
+<!--Created by 소홍렬\u0026정성훈-->
+<!--"-->
+                        <!--android:textSize="24dp"-->
+                        <!--android:fontFamily="@font/nanumpenscript_regular"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="#FFFFFF"-->
+                        <!--android:padding="20dp"-->
+                        <!--android:background="@drawable/border"/>-->
 
                     <TextView
                         android:layout_width="300dp"
                         android:layout_height="60dp"
                         android:text="프로필 관리"
+                        android:fontFamily="@font/nanumpenscript_regular"
+                        android:textSize="23dp"
                         android:padding="20dp"
                         android:background="@drawable/border"/>
                     <TextView
                         android:layout_width="300dp"
                         android:layout_height="60dp"
                         android:text="공지 사항"
+                        android:textSize="23dp"
+                        android:fontFamily="@font/nanumpenscript_regular"
                         android:padding="20dp"
                         android:background="@drawable/border"/>
                     <TextView
                         android:layout_width="300dp"
                         android:layout_height="60dp"
                         android:text="자주 묻는 질문"
+                        android:textSize="23dp"
+                        android:fontFamily="@font/nanumpenscript_regular"
                         android:padding="20dp"
                         android:background="@drawable/border"/>
                     <TextView
                         android:layout_width="300dp"
                         android:layout_height="60dp"
                         android:text="1:1 문의/챌린지 주제제안"
+                        android:textSize="23dp"
+                        android:fontFamily="@font/nanumpenscript_regular"
                         android:padding="20dp"
                         android:background="@drawable/border"/>
                     <TextView
                         android:layout_width="300dp"
                         android:layout_height="60dp"
                         android:text="법적 고지"
+                        android:textSize="23dp"
+                        android:fontFamily="@font/nanumpenscript_regular"
                         android:padding="20dp"
                         android:background="@drawable/border"/>
                     <TextView
                         android:layout_width="300dp"
                         android:layout_height="60dp"
                         android:text="회사 정보"
+                        android:textSize="23dp"
+                        android:fontFamily="@font/nanumpenscript_regular"
                         android:padding="20dp"
                         android:background="@drawable/border"/>
+
 
                 </LinearLayout>
                 <LinearLayout
@@ -273,9 +309,10 @@
 
                         />
                     <Button
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
                         android:text="CLOSE"
+                        android:fontFamily="@font/nanumpenscript_regular"
                         android:layout_gravity="bottom"
                         android:id="@+id/close"
                         android:background="@drawable/borderbox1"
@@ -283,9 +320,10 @@
                         />
 
                     <Button
-                        android:layout_width="70dp"
-                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
                         android:text="Logout"
+                        android:fontFamily="@font/nanumpenscript_regular"
                         android:layout_gravity="bottom"
                         android:id="@+id/logout"
                         android:background="@drawable/borderbox1"

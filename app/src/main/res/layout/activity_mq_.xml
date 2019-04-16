@@ -38,6 +38,7 @@
                 android:textSize="30dp"
                 android:textColor="#FDFBFB"
                 android:text="Main Quest"
+                android:fontFamily="@font/cabin_regular"
                 android:gravity="center"
 
                 />
@@ -73,10 +74,10 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
+                android:textSize="35sp"
                 android:id="@+id/fact"
                 android:text="왕관을 쓰려는자, 그 무게를 버텨라"
-
+                android:fontFamily="@font/nanumpenscript_regular"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"/>
 
@@ -94,7 +95,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/fact_button"
-            android:textSize="25dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/nanumpenscript_regular"
             android:layout_marginBottom="70dp"
             android:text="도전!"
             android:layout_gravity="center"

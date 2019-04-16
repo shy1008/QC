@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ public class MQ_Activity extends AppCompatActivity {
     TextView mTextView;
     Button mButton;
     Button left;
+    private  static MediaPlayer mp;
 
 
     View.OnClickListener lt = new View.OnClickListener() {
@@ -49,6 +51,10 @@ public class MQ_Activity extends AppCompatActivity {
         mimageView=(ImageView) findViewById(R.id.imageView);
         mTextView = (TextView) findViewById(R.id.fact);
         mButton = (Button) findViewById(R.id.fact_button);
+
+        mp = MediaPlayer.create(this,R.raw.run);
+        mp.setLooping(true);
+        mp.start();
 
 
 
@@ -94,5 +100,22 @@ public class MQ_Activity extends AppCompatActivity {
 
     public void  shuffleFacts(){
         Collections.shuffle(Arrays.asList(factArray));
+    }
+
+    protected  void  onUserLeaveHint(){
+        mp.pause();
+        super.onUserLeaveHint();
+    }
+    public void  onResume(){
+        mp.start();
+        super.onResume();
+    }
+    public  void  onDestroy(){
+        mp.stop();
+        super.onDestroy();
+    }
+    public void  onBackPressed(){
+        mp.stop();
+        super.onBackPressed();
     }
 }

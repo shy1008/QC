@@ -38,6 +38,7 @@
                 android:textSize="30dp"
                 android:textColor="#FDFBFB"
                 android:text="Together Quest"
+                android:fontFamily="@font/cabin_regular"
                 android:gravity="center"
 
                 />

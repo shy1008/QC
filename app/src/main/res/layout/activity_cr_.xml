@@ -38,6 +38,7 @@
                 android:textSize="30dp"
                 android:textColor="#FDFBFB"
                 android:text="Challenge registration"
+                android:fontFamily="@font/cabin_regular"
                 android:gravity="center"
 
                 />
@@ -66,7 +67,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=" 챌린지명을 입력해 주세요."
-                android:textSize="25dp"
+                android:fontFamily="@font/nanumpenscript_regular"
+                android:textSize="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_margin="20dp"
                 />
@@ -89,7 +91,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=" 챌린지 내용을 입력해 주세요."
-                android:textSize="25dp"
+                android:fontFamily="@font/nanumpenscript_regular"
+                android:textSize="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_margin="20dp" />
             <EditText
@@ -107,6 +110,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" 등록"
+            android:textSize="23dp"
+            android:fontFamily="@font/nanumpenscript_regular"
             android:layout_gravity="center"
             android:background="@drawable/borderbox1"
             android:layout_marginTop="20dp"
