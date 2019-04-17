@@ -9,6 +9,8 @@
     android:background="#F2695C"
     android:id="@+id/ll">
 
+    <!--로그인-->
+
     <TextView
         android:layout_width="300dp"
         android:layout_height="400dp"
