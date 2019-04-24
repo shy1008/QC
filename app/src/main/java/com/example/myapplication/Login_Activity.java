@@ -12,35 +12,35 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 
 public class Login_Activity extends AppCompatActivity {
-    Button loginb;
-    EditText id;
+    Button loginbtn;
+    EditText login_et;
     InputMethodManager imm;
-    LinearLayout ll;
+    LinearLayout login_layout;
 //    EditText pw;
 
-    View.OnClickListener lb = new View.OnClickListener() {
+    View.OnClickListener login = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             SharedPreferences sp = getSharedPreferences("a",0);
             SharedPreferences.Editor edit = sp.edit();
-            edit.putString("id",id.getText().toString());
+            edit.putString("id",login_et.getText().toString());
 //            비밀번호
 //            edit.putString("pw",pw.getText().toString());
             edit.commit();
 
 
-            Intent ii = new Intent(Login_Activity.this,MainActivity.class);
-            ii.putExtra("id",id.getText().toString());
+            Intent i_login = new Intent(Login_Activity.this,MainActivity.class);
+            i_login.putExtra("id",login_et.getText().toString());
 //            비밀번호
 //            ii.putExtra("pw",pw.getText().toString());
-            startActivity(ii);
+            startActivity(i_login);
             finish();
         }
     };
 
 
 
-    View.OnClickListener lplp = new View.OnClickListener()
+    View.OnClickListener hideboard = new View.OnClickListener()
     {
         @Override
         public void onClick(View v)
@@ -48,13 +48,13 @@ public class Login_Activity extends AppCompatActivity {
             hideKeyboard();
             switch (v.getId())
             {
-                case R.id.ll :
+                case R.id.login_layout :
                     break;
             }
         }
 
         private void hideKeyboard() {
-            imm.hideSoftInputFromWindow(id.getWindowToken(), 0);
+            imm.hideSoftInputFromWindow(login_et.getWindowToken(), 0);
         }
     };
 
@@ -67,13 +67,13 @@ public class Login_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_);
          imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-         ll = findViewById(R.id.ll);
+        login_layout = findViewById(R.id.login_layout);
 
-        id = (EditText) findViewById(R.id.id1);
+        login_et = (EditText) findViewById(R.id.login_et);
 //        pw = (EditText) findViewById(R.id.pw1);
-        loginb = (Button) findViewById(R.id.loginb);
-        loginb.setOnClickListener(lb);
-        ll.setOnClickListener(lplp);
+        loginbtn = (Button) findViewById(R.id.loginbtn);
+        loginbtn.setOnClickListener(login);
+        login_layout.setOnClickListener(hideboard);
 
 
 

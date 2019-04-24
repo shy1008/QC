@@ -19,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
     Button open;
     Button close;
     Button logout;
-    TextView id2;
-    Button mbtn;
-    Button tbtn;
-    Button cbtn;
-    DrawerLayout dlayout;
-    LinearLayout QC;
+    TextView login_id;
+    Button main_btn;
+    Button together_btn;
+    Button challenge_btn;
+    DrawerLayout d_layout;
+    LinearLayout left_layout;
 
     ImageView kaka;
     ImageView face;
@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener o = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            dlayout.openDrawer(Gravity.LEFT);
+            d_layout.openDrawer(Gravity.LEFT);
         }
     };
     View.OnClickListener c = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            dlayout.closeDrawer(Gravity.LEFT);
+            d_layout.closeDrawer(Gravity.LEFT);
         }
     };
 
@@ -121,11 +121,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Intent intent = getIntent();
         String str1 = intent.getStringExtra("id");
-        id2 = (TextView) findViewById(R.id.id2);
-        id2.setText(str1);
+        login_id = (TextView) findViewById(R.id.login_id);
+        login_id.setText(str1);
 
-        QC = (LinearLayout)findViewById(R.id.QC);
-        dlayout = (DrawerLayout)findViewById(R.id.dlayout);
+        left_layout = (LinearLayout)findViewById(R.id.left_layout);
+        d_layout = (DrawerLayout)findViewById(R.id.d_layout);
         open = (Button)findViewById(R.id.open);
         close = (Button)findViewById(R.id.close);
         logout = (Button)findViewById(R.id.logout);
@@ -137,18 +137,18 @@ public class MainActivity extends AppCompatActivity {
         close.setOnClickListener(c);
         logout.setOnClickListener(l);
 
-        mbtn = findViewById(R.id.mbtn);
-        tbtn = findViewById(R.id.tbtn);
-        cbtn = findViewById(R.id.cbtn);
+        main_btn = findViewById(R.id.main_btn);
+        together_btn = findViewById(R.id.together_btn);
+        challenge_btn = findViewById(R.id.challenge_btn);
 
-        mbtn.setOnClickListener(mb);
-        tbtn.setOnClickListener(tb);
-        cbtn.setOnClickListener(cb);
+        main_btn.setOnClickListener(mb);
+        together_btn.setOnClickListener(tb);
+        challenge_btn.setOnClickListener(cb);
         kaka.setOnClickListener(v);
         face.setOnClickListener(vv);
         instar.setOnClickListener(vvv);
 
-        QC.setOnClickListener(qc);
+        left_layout.setOnClickListener(qc);
 
 
 

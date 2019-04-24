@@ -12,7 +12,7 @@
     <android.support.v4.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/dlayout">
+        android:id="@+id/d_layout">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -88,7 +88,7 @@
                                 android:text="000"
                                 android:fontFamily="@font/nanumpenscript_regular"
                                 android:textSize="24sp"
-                                android:id="@+id/id2"
+                                android:id="@+id/login_id"
                                 android:textColor="#F8CA4D"
                                 />
                             <!--<TextView-->
@@ -130,7 +130,7 @@
                         android:layout_height="wrap_content"
                         android:text="Main Quest"
                         android:fontFamily="@font/cabin_regular"
-                        android:id="@+id/mbtn"
+                        android:id="@+id/main_btn"
                         android:textSize="30sp"
                         android:background="@drawable/border_radius"
                         android:gravity="center"
@@ -149,7 +149,7 @@
                         android:layout_height="wrap_content"
                         android:text="Together Quest"
                         android:fontFamily="@font/cabin_regular"
-                        android:id="@+id/tbtn"
+                        android:id="@+id/together_btn"
                         android:textSize="30sp"
                         android:background="@drawable/border_radius2"
                         android:gravity="center"
@@ -168,7 +168,7 @@
                         android:layout_height="wrap_content"
                         android:text="Challenge registration"
                         android:fontFamily="@font/cabin_regular"
-                        android:id="@+id/cbtn"
+                        android:id="@+id/challenge_btn"
                         android:textSize="30sp"
                         android:textColor="#FDFBFB"
                         android:background="@drawable/border_radius3"
@@ -197,7 +197,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:id="@+id/QC"
+                    android:id="@+id/left_layout"
                     >
 
                     <TextView
