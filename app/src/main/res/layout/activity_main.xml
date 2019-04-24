@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/d_layout">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -33,19 +34,21 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
                     android:gravity="center">
+
                     <Button
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@drawable/menu"
                         android:id="@+id/open"/>
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_weight="3"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -53,35 +56,36 @@
                         android:textColor="#FDFBFB"
                         android:text="Q\u0026C"
                         android:gravity="center"
-                        android:fontFamily="@font/cabin_regular"
+                        android:fontFamily="@font/cabin_regular" />
 
-                        />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:layout_marginTop="20px"
-                        >
+                        android:layout_marginTop="20px">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="챌린지 "
                             android:fontFamily="@font/nanumpenscript_regular"
                             android:textSize="20sp"
-                            android:textColor="#FDFBFB"
+                            android:textColor="#FDFBFB" />
 
-                            />
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -89,8 +93,9 @@
                                 android:fontFamily="@font/nanumpenscript_regular"
                                 android:textSize="24sp"
                                 android:id="@+id/login_id"
-                                android:textColor="#F8CA4D"
-                                />
+                                android:textColor="#F8CA4D" />
+
+
                             <!--<TextView-->
                                 <!--android:layout_width="wrap_content"-->
                                 <!--android:layout_height="wrap_content"-->
@@ -98,16 +103,17 @@
                                 <!--android:textColor="#FDFBFB"-->
                                 <!--android:textSize="15sp"/>-->
                         </LinearLayout>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="환영합니다 "
                             android:fontFamily="@font/nanumpenscript_regular"
                             android:textColor="#FDFBFB"
-                            android:textSize="20sp"
-                            />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
+
                 </LinearLayout>
 
 
@@ -119,12 +125,14 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:background="#ECDDC7">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
                     android:gravity="center">
+
                     <Button
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
@@ -134,16 +142,17 @@
                         android:textSize="30sp"
                         android:background="@drawable/border_radius"
                         android:gravity="center"
-                        android:textColor="#FDFBFB"
-                        />
+                        android:textColor="#FDFBFB" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
                     android:gravity="center">
+
                     <Button
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
@@ -153,8 +162,7 @@
                         android:textSize="30sp"
                         android:background="@drawable/border_radius2"
                         android:gravity="center"
-                        android:textColor="#FDFBFB"
-                        />
+                        android:textColor="#FDFBFB"/>
 
                 </LinearLayout>
                 <LinearLayout
@@ -172,8 +180,7 @@
                         android:textSize="30sp"
                         android:textColor="#FDFBFB"
                         android:background="@drawable/border_radius3"
-                        android:gravity="center"
-                        />
+                        android:gravity="center" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -197,8 +204,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:id="@+id/left_layout"
-                    >
+                    android:id="@+id/left_layout">
 
                     <TextView
                         android:layout_width="300dp"
@@ -210,14 +216,13 @@
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"
                         android:padding="20dp"
-                        android:background="@drawable/border"
-                       />
+                        android:background="@drawable/border"/>
                     <!--<TextView-->
                         <!--android:layout_width="300dp"-->
                         <!--android:layout_height="90dp"-->
                         <!--android:text="-->
-<!--Created by 소홍렬\u0026정성훈-->
-<!--"-->
+                        <!--Created by 소홍렬\u0026정성훈-->
+                        <!--"-->
                         <!--android:textSize="24dp"-->
                         <!--android:fontFamily="@font/nanumpenscript_regular"-->
                         <!--android:textStyle="bold"-->
@@ -279,10 +284,7 @@
                 <LinearLayout
                     android:layout_width="300dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-
-
-                    >
+                    android:orientation="horizontal">
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
@@ -290,9 +292,7 @@
                         android:id="@+id/kakao"
                         android:background="@drawable/kaka"
                         android:layout_margin="8dp"
-                        android:layout_marginBottom="5dp"
-
-                        />
+                        android:layout_marginBottom="5dp" />
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
@@ -300,16 +300,13 @@
                         android:id="@+id/face"
                         android:background="@drawable/face"
                         android:layout_margin="8dp"
-                        android:layout_marginBottom="5dp"
-                        />
+                        android:layout_marginBottom="5dp"/>
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="bottom"
                         android:id="@+id/instar"
-                        android:background="@drawable/instar"
-
-                        />
+                        android:background="@drawable/instar" />
                     <Button
                         android:layout_width="50dp"
                         android:layout_height="40dp"
@@ -318,9 +315,7 @@
                         android:layout_gravity="bottom"
                         android:id="@+id/close"
                         android:background="@drawable/borderbox1"
-                        android:layout_margin="3dp"
-                        />
-
+                        android:layout_margin="3dp" />
                     <Button
                         android:layout_width="50dp"
                         android:layout_height="40dp"
@@ -329,8 +324,7 @@
                         android:layout_gravity="bottom"
                         android:id="@+id/logout"
                         android:background="@drawable/borderbox1"
-                        android:layout_margin="3dp"
-                        />
+                        android:layout_margin="3dp"/>
                 </LinearLayout>
 
             </LinearLayout>

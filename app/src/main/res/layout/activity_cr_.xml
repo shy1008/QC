@@ -30,8 +30,8 @@
             android:layout_width="0dp"
             android:layout_weight="3"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -39,10 +39,10 @@
                 android:textColor="#FDFBFB"
                 android:text="Challenge registration"
                 android:fontFamily="@font/cabin_regular"
-                android:gravity="center"
+                android:gravity="center" />
 
-                />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -51,6 +51,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -60,8 +61,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -70,8 +70,8 @@
                 android:fontFamily="@font/nanumpenscript_regular"
                 android:textSize="30dp"
                 android:layout_marginTop="20dp"
-                android:layout_margin="20dp"
-                />
+                android:layout_margin="20dp" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
