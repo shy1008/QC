@@ -32,9 +32,9 @@ public class CR_Activity extends AppCompatActivity  {
     private EditText chtext;
     private  String id;
     InputMethodManager imm;
-    LinearLayout ll2;
+    LinearLayout cr_linear;
 
-    View.OnClickListener lplp = new View.OnClickListener()
+    View.OnClickListener hide = new View.OnClickListener()
     {
         @Override
         public void onClick(View v)
@@ -42,7 +42,7 @@ public class CR_Activity extends AppCompatActivity  {
             hideKeyboard();
             switch (v.getId())
             {
-                case R.id.ll3:
+                case R.id.cr_linear:
                     break;
             }
         }
@@ -113,8 +113,8 @@ public class CR_Activity extends AppCompatActivity  {
         chname = (EditText) findViewById(R.id.chname);
         chtext = (EditText) findViewById(R.id.chtext);
         imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        ll2= findViewById(R.id.ll3);
-        ll2.setOnClickListener(lplp);
+        cr_linear= findViewById(R.id.cr_linear);
+        cr_linear.setOnClickListener(hide);
 
         findViewById(R.id.res).setOnClickListener(p);
         left.setOnClickListener(lt);
