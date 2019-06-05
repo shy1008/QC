@@ -32,8 +32,8 @@ public class MQ_Activity extends AppCompatActivity {
     View.OnClickListener lt = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent leftt = new Intent(MQ_Activity.this, MainActivity.class);
-            startActivity(leftt);
+//            Intent leftt = new Intent(MQ_Activity.this, MainActivity.class);
+//            startActivity(leftt);
             finish();
         }
     };
