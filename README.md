@@ -29,7 +29,7 @@ Quest & Challenge 의 줄임말로 Q&C로 정했습니다. 쾌스트와 도전�
   
   </div>
 
-<h2>스케치</h2> 
+<h2>스토리보드</h2> 
 <img src="https://user-images.githubusercontent.com/46985790/59327980-22956300-8d26-11e9-833f-95d4d25fedc2.PNG">
 
 <h2>개발자</h2>
